@@ -34,8 +34,8 @@
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-    <div class="backgrounds overlay">
-        <div class="background yb-seal yb-seal-slide-up"></div>
+    <div class="links-content">
+        <div class="brand-link right"><i class="fa-brands fa-github" onclick="redirectToPage('git')"></i><i class="fa-brands fa-npm" onclick="redirectToPage('npm')"></i></div>
     </div>
 
     <header class="lib">
@@ -195,6 +195,10 @@
     </section>
 </body>
 <script>
+    function redirectToPage(text) {
+        if (text == 'git') window.open('https://github.com/Yashwanthbyalla', 'name', 'noopener=yes');
+        if (text == 'npm') window.open('https://registry.npmjs.org/yb-seal', 'name', 'noopener=yes');
+    }
 "use strict";
 function loadSEAL() {
     window.addEventListener('scroll', () => {
