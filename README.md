@@ -9,7 +9,7 @@ Lightweight, performance focused (**2.3 kb**) scroll effect animation library, w
 **Seal** (_Scroll Effect Animation Library_) was created to provide a lightweight solution for animating elements upon scroll. It's based on DOM objects which gives amazing performance in terms of checking the element's presence in the viewport.
 
 ### 🚀 [Demo](https://yashwanthbyalla.github.io/yb-seal-demo/)
-### 🚀 [Link](https://registry.npmjs.org/yb-seal)
+### 🚀 [npm library](https://registry.npmjs.org/yb-seal)
 
 ## Table of Contents
 - [Install](#install)
