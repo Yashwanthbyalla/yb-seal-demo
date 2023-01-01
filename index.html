@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yashwanth Byalla</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<meta property="og:title" content="yb-seal demo">
+	<meta property="og:type" content="website">
+	<meta name="description" property="og:description" content="This is demo site to show the animations using yb-seal npm package.">
+	<meta property="og:image:width" content="250"/><meta property="og:image:height" content="250"/>
+	<style>body{overflow-y:scroll;scroll-behavior:smooth}</style>
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        
+      .bg {
+        background-image: linear-gradient(225deg, #0000ff 50%, #03a9f4 50%);
+      }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="backgrounds overlay">
+        <div class="background yb-seal yb-seal-slide-up"></div>
+    </div>
+
+    <header class="lib">
+        <div class="lib-content">
+            <h1 class="lib-name">SEAL</h1>
+            <h2 class="lib-text">Scroll Effect Animation Library</h2>
+        </div>
+        <span class="lib-scroll">
+            Scroll down <br>
+            <i class="fa-solid fa-angles-down"></i>
+        </span>
+    </header>
+
+<!-- Slide -->
+    <section class="section section-seal">
+        <div class="container">
+            <h2 class="section-seal-title">Slide</h2>
+            <div class="section-seal-content left yb-seal yb-seal-slide-left">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-left"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-slide-right">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-right"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content left yb-seal yb-seal-slide-up">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-up"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-slide-down">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-down"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+<!-- Zoom -->
+    <section class="section section-seal">
+        <div class="container">
+            <h2 class="section-seal-title">Zoom</h2>
+            <div class="section-seal-content left yb-seal yb-seal-zoom-in">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-zoom-in"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-zoom-out">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-zoom-out"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+<!-- Flip -->
+    <section class="section section-seal">
+        <div class="container">
+            <h2 class="section-seal-title">Flip</h2>
+            <div class="section-seal-content left yb-seal yb-seal-flip-left">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-left"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-flip-right">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-right"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content left yb-seal yb-seal-flip-up">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-up"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-flip-down">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-down"</span>&gt;</span><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+<!-- Slide with duration -->
+    <section class="section section-seal">
+        <div class="container">
+            <h2 class="section-seal-title">Slide with duration (in seconds)</h2>
+            <div class="section-seal-content left yb-seal yb-seal-slide-left" yb-seal-duration="1">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-left"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"1"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-slide-right" yb-seal-duration="2">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-right"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"2"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content left yb-seal yb-seal-slide-up" yb-seal-duration="3">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-up"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"3"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-slide-down" yb-seal-duration="4">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-slide-down"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"4"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+<!-- Zoom with duration -->
+    <section class="section section-seal">
+        <div class="container">
+            <h2 class="section-seal-title">Zoom with duration (in seconds)</h2>
+            <div class="section-seal-content left yb-seal yb-seal-zoom-in" yb-seal-duration="2">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-zoom-in"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"2"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-zoom-out" yb-seal-duration="3">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-zoom-out"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"3"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+<!-- Flip with duration -->
+    <section class="section section-seal">
+        <div class="container">
+            <h2 class="section-seal-title">Flip with duration (in seconds)</h2>
+            <div class="section-seal-content left yb-seal yb-seal-flip-left" yb-seal-duration="1">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-left"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"1"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-flip-right" yb-seal-duration="2">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-right"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"2"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content left yb-seal yb-seal-flip-up" yb-seal-duration="3">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-up"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"3"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal yb-seal-flip-down" yb-seal-duration="4">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal yb-seal-flip-down"</span><br/><span class="seal-styles-attribute">yb-seal-duration</span>=<span class="seal-styles-value">"4"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    "use strict";
+function loadSEAL() {
+    window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--seal', window.pageYOffset / (document.body.offsetHeight - window.innerHeight) + 'px');
+        document.body.style.setProperty('overflow-x', 'hidden');
+    }, false);
+    window.addEventListener("scroll", scrollAnimate);
+    scrollAnimate();
+}
+function scrollAnimate() {
+    const y_elements = document.querySelectorAll(".yb-seal");
+    const triggerBottom = (window.innerHeight / 5) * 4;
+    y_elements.forEach((y_item) => {
+        const y_itemTop = y_item.getBoundingClientRect().top;
+        if (y_itemTop < triggerBottom) {
+            y_item.classList.add("seal-show");
+            const value = y_item.getAttribute("yb-seal-duration");
+            if (value) {
+                y_item.style.transition = value + 's all ease';
+            }
+            else {
+                y_item.style.transition = '0.6s all ease';
+            }
+            if ((Array.from(y_item.classList).includes('yb-seal-slide-up')) || (Array.from(y_item.classList).includes('yb-seal-slide-down'))) {
+                let op = 0.1;
+                while (op < 1) {
+                    op += 0.1;
+                    if (op == 1)
+                        return;
+                    y_item.style.opacity = op;
+                }
+            }
+        }
+        else {
+            y_item.classList.remove("seal-show");
+            if ((Array.from(y_item.classList).includes('yb-seal-slide-up')) || (Array.from(y_item.classList).includes('yb-seal-slide-down'))) {
+                let op = 1;
+                while (op > 0) {
+                    op -= 0.1;
+                    if (op == 0)
+                        return;
+                    y_item.style.opacity = op;
+                }
+            }
+        }
+    });
+}
+loadSEAL();
+
+</script>

@@ -1,0 +1,155 @@
+@import './yb-seal.css';
+/* Background Effects */
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+.lib {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+.lib-content {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.lib-name {
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.lib-scroll {
+  position: absolute;
+  bottom: 60px;
+  width: 200px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  padding-bottom: 40px;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+.lib-scroll .fa-angles-down {
+    margin-top: 20px;
+    display: block;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    color: #FF4081;
+    font-size: 40px;
+}
+.chevron.bottom:before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.chevron::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 20px;
+}
+/* section styles */
+.section {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.container {
+    width: 970px;
+    margin: 0 auto;
+    max-width: 90%;
+    -webkit-transform: translateZ(1000px);
+    transform: translateZ(1000px);
+}
+.section-seal-title {
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.section-seal-content {
+    width: 40%;
+    clear: both;
+    height: 200px;
+    background: #FFF;
+    border-radius: 2px;
+    margin: 12vh 0;
+    padding: 10px;
+}
+.section-seal-content pre, .section-seal-content code {
+    height: 100%;
+    margin: 0;
+}
+.section-seal-content pre {
+    overflow: hidden;
+}
+.section-seal-content code {
+    padding: 20px 0 0 20px;
+}
+.section-seal-content code {
+    padding-top: 75px;
+}
+.seal-styles {
+    display: block;
+    overflow-x: auto;
+    background: #202746;
+    color: #979db4;
+    padding: 0.5em;
+    -webkit-text-size-adjust: none;
+}
+.seal-styles-variable, .seal-styles-tag, .seal-styles-regexp, .seal-styles-name, .ruby .seal-styles-constant, .xml .seal-styles-tag .seal-styles-title, .xml .seal-styles-pi, .xml .seal-styles-doctype, .html .seal-styles-doctype, .css .seal-styles-id, .css .seal-styles-class, .css .seal-styles-pseudo {
+    color: deepskyblue;
+}
+.seal-styles-string, .seal-styles-value, .seal-styles-inheritance, .seal-styles-header, .ruby .seal-styles-symbol, .xml .seal-styles-cdata {
+    color: darkorange;
+}
