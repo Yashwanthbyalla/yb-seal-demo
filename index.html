@@ -193,13 +193,35 @@
             </div>
         </div>
     </section>
+<!-- Transition Timing functions -->
+    <section class="section section-seal">
+        <div class="container">
+            <h2 class="section-seal-title">Transition Timing functions<br/>(Hover on any of them below to see the transition)</h2>
+            <div class="section-seal-content left yb-seal" yb-seal-timing="ease" yb-seal-timing-width="500">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal"</span><br/><span class="seal-styles-attribute">yb-seal-timing</span>=<span class="seal-styles-value">"ease"</span><br/><span class="seal-styles-attribute">yb-seal-timing-width</span>=<span class="seal-styles-value">"500"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal" yb-seal-timing="ease-in" yb-seal-timing-width="500">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal"</span><br/><span class="seal-styles-attribute">yb-seal-timing</span>=<span class="seal-styles-value">"ease-in"</span><br/><span class="seal-styles-attribute">yb-seal-timing-width</span>=<span class="seal-styles-value">"500"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content left yb-seal" yb-seal-timing="ease-out" yb-seal-timing-width="500">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal"</span><br/><span class="seal-styles-attribute">yb-seal-timing</span>=<span class="seal-styles-value">"ease-out"</span><br/><span class="seal-styles-attribute">yb-seal-timing-width</span>=<span class="seal-styles-value">"500"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content right yb-seal" yb-seal-timing="ease-in-out" yb-seal-timing-width="500">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal"</span><br/><span class="seal-styles-attribute">yb-seal-timing</span>=<span class="seal-styles-value">"ease-in-out"</span><br/><span class="seal-styles-attribute">yb-seal-timing-width</span>=<span class="seal-styles-value">"500"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+            <div class="section-seal-content left yb-seal" yb-seal-timing="linear" yb-seal-timing-width="500">
+                <pre><code class="html seal-styles xml"><span class="seal-styles-tag">&lt;<span class="seal-styles-title">div </span><span class="seal-styles-attribute">class</span>=<span class="seal-styles-value">"yb-seal"</span><br/><span class="seal-styles-attribute">yb-seal-timing</span>=<span class="seal-styles-value">"linear"</span><br/><span class="seal-styles-attribute">yb-seal-timing-width</span>=<span class="seal-styles-value">"500"</span>&gt;</span><br/><span class="seal-styles-tag">&lt;/<span class="seal-styles-title">div</span>&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
 </body>
 <script>
     function redirectToPage(text) {
         if (text == 'git') window.open('https://github.com/Yashwanthbyalla', 'name', 'noopener=yes');
-        if (text == 'npm') window.open('https://registry.npmjs.org/yb-seal', 'name', 'noopener=yes');
+        if (text == 'npm') window.open('https://www.npmjs.com/package/yb-seal', 'name', 'noopener=yes');
     }
-"use strict";
+
+    "use strict";
 function loadSEAL() {
     window.addEventListener('scroll', () => {
         document.body.style.setProperty('--seal', window.pageYOffset / (document.body.offsetHeight - window.innerHeight) + 'px');
@@ -230,8 +252,13 @@ function scrollAnimate() {
             }
             // Timing function
             const timingValue = y_item.getAttribute("yb-seal-timing");
+            const timingWidthValue = y_item.getAttribute("yb-seal-timing-width");
             if (timingValue) {
                 y_item.style.transitionTimingFunction = timingValue;
+                y_item.style.transition = 'width 2s' + timingValue;
+                y_item.addEventListener('mouseover', function () {
+                    y_item.style.width = timingWidthValue + 'px';
+                });
             }
             if ((Array.from(y_item.classList).includes('yb-seal-slide-up')) || (Array.from(y_item.classList).includes('yb-seal-slide-down'))) {
                 let op = 0.1;
