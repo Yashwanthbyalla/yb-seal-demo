@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Yashwanth Byalla</title>
+	<title>yb-seal demo (npm library)</title>
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
@@ -214,14 +214,14 @@
             </div>
         </div>
     </section>
+
 </body>
 <script>
     function redirectToPage(text) {
         if (text == 'git') window.open('https://github.com/Yashwanthbyalla', 'name', 'noopener=yes');
         if (text == 'npm') window.open('https://www.npmjs.com/package/yb-seal', 'name', 'noopener=yes');
     }
-
-    "use strict";
+"use strict";
 function loadSEAL() {
     window.addEventListener('scroll', () => {
         document.body.style.setProperty('--seal', window.pageYOffset / (document.body.offsetHeight - window.innerHeight) + 'px');
@@ -256,8 +256,11 @@ function scrollAnimate() {
             if (timingValue) {
                 y_item.style.transitionTimingFunction = timingValue;
                 y_item.style.transition = 'width 2s' + timingValue;
-                y_item.addEventListener('mouseover', function () {
+                y_item.addEventListener('mouseenter', function () {
                     y_item.style.width = timingWidthValue + 'px';
+                });
+                y_item.addEventListener('mouseleave', function () {
+                    y_item.style.width = '';
                 });
             }
             if ((Array.from(y_item.classList).includes('yb-seal-slide-up')) || (Array.from(y_item.classList).includes('yb-seal-slide-down'))) {
@@ -266,7 +269,7 @@ function scrollAnimate() {
                     op += 0.1;
                     if (op == 1)
                         return;
-                    y_item.style.opacity = op;
+                    y_item.style.opacity = op.toString();
                 }
             }
         }
@@ -278,7 +281,7 @@ function scrollAnimate() {
                     op -= 0.1;
                     if (op == 0)
                         return;
-                    y_item.style.opacity = op;
+                    y_item.style.opacity = op.toString();
                 }
             }
         }
